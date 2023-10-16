@@ -1,0 +1,36 @@
+import java.util.Arrays;
+import java.util.Collections;
+public class Main {
+    public static void main(String[] args) {
+        // Step 1: Create and shuffle the array
+        Integer[] numbers = {1, 2, 3, 4, 5, 6, 7};
+        Collections.shuffle(Arrays.asList(numbers));
+        System.out.println("Shuffled Array: " + Arrays.toString(numbers));
+
+        // Step 2: Convert Roman Number to Integer
+        String romanNumber = "IX"; // Example Roman Number
+        int integerValue = romanToInteger(romanNumber);
+        System.out.println("Integer value of Roman Number " + romanNumber + " is: " + integerValue);
+
+        // Step 3: Check if the input is a pangram
+        String inputString = "The quick brown fox jumps over the lazy dog";
+        boolean isPangram = checkPangram(inputString);
+        System.out.println("Is the input a pangram? " + isPangram);
+    }
+
+    // Function to convert Roman Number to Integer
+    public static int romanToInteger(String s) {
+        // Implementation of the conversion logic
+        // ...
+
+        return 0; // Placeholder, implement the conversion logic here
+    }
+
+    // Function to check if the input is a pangram
+    public static boolean checkPangram(String s) {
+        // Implementation of the pangram check logic
+        // ...
+
+        return false; // Placeholder, implement the pangram check logic here
+    }
+}
